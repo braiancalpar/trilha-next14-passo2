@@ -10,7 +10,9 @@ export const ModalComment = () => {
   return (
     <>
       <Modal ref={modalRef}>
-        <h1>Olá mundo!</h1>
+        <form>
+          <textarea name="text"></textarea>
+        </form>
       </Modal>
       <IconButton onClick={() => modalRef.current.openModal()}>
         <Chat />
